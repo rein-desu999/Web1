@@ -4,19 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Poly Event Board</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header>
-        <h1>Poly Planner</h1>
+        <h1>Poly Event Board</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Events</a></li>
-                <li><a href="#"> Make an event</a></li>
-                <li><a href="#"> Sign-In</a></li>
+                <li><a href="make an event.html"> Make an event</a></li>
+                <li><a href="log in.html"> Sign-In</a></li>
             </ul>
         </nav>
     </header>
@@ -24,7 +24,7 @@
     <main>
 
         <div class="w3-card-4">
-            <div class="w3-container w3-green">
+            <div class="w3-container w3-gray">
                 <h2>Make an event</h2>
             </div>
             <form id="createEventForm" class="w3-container">
@@ -52,14 +52,14 @@
                 <label for="organizerEmail">Organizer Email</label>
                 <input id="organizerEmail" class="w3-input" type="email" required>
                 
-                <button id="createButton" class="w3-btn w3-blue">Create</button>
+                <button id="createButton" class="w3-btn">Create</button>
             </form>
         </div>   
         
         <br>
 
         <div class="w3-card-4">
-            <div class="w3-container w3-green">
+            <div class="w3-container w3-gray">
                 <h2>Sign In</h2>
             </div>
             <form id="logInForm" class="w3-container">
@@ -69,25 +69,25 @@
                 <label for="password">Password</label>
                 <input id="password" class="w3-input" type="text" required>
         
-                <button id="logInButton" class="w3-btn w3-blue">Log In</button>
+                <button id="logInButton" class="w3-btn">Log In</button>
             </form>
         </div> 
         
     <br>
     
         <div class="w3-card-4">
-            <div class="w3-container w3-green">
+            <div class="w3-container w3-gray">
                 <h2>Bronco Sign In</h2>
             </div>
             <form id="logInForm" class="w3-container">
-                <button id="logInButton" class="w3-btn w3-blue">Log In</button>
+                <button id="logInButton" class="w3-btn">Log In</button>
             </form>
         </div> 
     
     <br>
     
         <div class="w3-card-4">
-            <div class="w3-container w3-green">
+            <div class="w3-container w3-gray">
                 <h2>Sign Up</h2>
             </div>
             <form id="logInForm" class="w3-container">
@@ -97,7 +97,7 @@
                 <label for="password">Password</label>
                 <input id="password" class="w3-input" type="text" required>
         
-                <button id="SignUpButton" class="w3-btn w3-blue">Sign Up</button>
+                <button id="SignUpButton" class="w3-btn">Sign Up</button>
             </form>
         </div> 
         
@@ -112,7 +112,6 @@
                 var organizerName = document.getElementById('organizerName').value;
                 var organizerEmail = document.getElementById('organizerEmail').value;
                 var inputArray = [eventName, eventDate, eventTime, location, type, description, organizerName, organizerEmail];
-                
             }
         </script>
 

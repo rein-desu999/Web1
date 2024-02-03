@@ -51,16 +51,6 @@ section {
     margin: 0 auto;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
 .w3-card-4 {
     width: 100%;
     background-color: #fff;
@@ -68,8 +58,8 @@ footer {
     border-radius: 8px;
 }
 
-.w3-container.w3-green {
-    background-color: #4CAF50;
+.w3-container.w3-gray {
+    background-color: #4c63af;
     color: white;
     padding: 16px;
     text-align: center;
@@ -98,7 +88,7 @@ textarea {
 .w3-btn {
     width: 100%;
     padding: 12px;
-    background-color: #4CAF50;
+    background-color: #4c63af;
     color: white;
     border: none;
     border-radius: 4px;
@@ -107,7 +97,7 @@ textarea {
 
 
 .w3-btn:hover {
-    background-color: #45a049;
+    background-color: #bbae39;
 }
 
 #createButton {
