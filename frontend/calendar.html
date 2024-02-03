@@ -61,22 +61,54 @@
             const db = getDatabase();
             
             function displayAllEvents() {
-                const dbref = ref(db);
-                const eventsRef = ref(db, 'Event');
+              const eventsRef = ref(db, 'Event');
 
-                get(eventsRef).then((snapshot) => {
-                  if(snapshot.exists()) {
-                    document.getElementById('data-list'). innerHTML = '';
+              get(eventsRef).then((snapshot) => {
+                  if (snapshot.exists()) {
+                      document.getElementById('data-list').innerHTML = '';
 
-                    snapshot.forEach(function (childSnapshot) {
-                      var eventData = childSnapshot.val();
-                      var listItem = document.createElement('li');
-                      listItem.textContent = `Name: ${eventData.Name}, Date: ${eventData.Date}, Time: ${eventData.Time}, Location: ${eventData.Location}, Organizer: ${eventData.organizer}`;
-                      document.getElementById('data-list').appendChild(listItem);
-                    });
-                  }
-                });
-            }
+                      // Create a table element
+                      var table = document.createElement('table');
+                      table.classList.add('event-table');
+
+                      // Create table header
+                      var thead = document.createElement('thead');
+                      var headerRow = document.createElement('tr');
+                      var headers = ['Name', 'Date', 'Time', 'Location', 'organizer'];
+
+                      headers.forEach(headerText => {
+                          var th = document.createElement('th');
+                          th.textContent = headerText;
+                          headerRow.appendChild(th);
+                      });
+
+                      thead.appendChild(headerRow);
+                      table.appendChild(thead);
+
+                      // Create table body
+                      var tbody = document.createElement('tbody');
+
+                      snapshot.forEach(function (childSnapshot) {
+                          var eventData = childSnapshot.val();
+                          var row = document.createElement('tr');
+
+                          headers.forEach(header => {
+                              var cell = document.createElement('td');
+                              cell.textContent = eventData[header];
+                              row.appendChild(cell);
+                          });
+
+                          tbody.appendChild(row);
+                      });
+
+                      table.appendChild(tbody);
+
+                      // Append the table to the 'data-list' div
+                      document.getElementById('data-list').appendChild(table);
+                    }
+                  });
+                }
+
 
             displayAllEvents();
         </script>

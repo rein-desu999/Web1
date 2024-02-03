@@ -110,3 +110,21 @@ textarea {
         width: 80%;
     }
 }
+
+/* Add this to your existing stylesheet or create a new one */
+
+.event-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.event-table th, .event-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.event-table th {
+    background-color: #f2f2f2;
+}
