@@ -178,6 +178,159 @@ section{
     text-overflow: ellipsis;
 }
 
+.events-container .box-container .box .club{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-container .box-container .box .club img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.events-container .box-container .box .club h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+
+}
+
+.events-container .box-container .box .club p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.events-container .box-container .box .club .event-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+/* school**/
+.events-container .box-container .box .school{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-container .box-container .box .school img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.events-container .box-container .box .school h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+
+}
+
+.events-container .box-container .box .club p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.events-container .box-container .box .school .event-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+.events-container .box-container .box .location{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+/* sorority**/
+.events-container .box-container .box .sorority{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-container .box-container .box .sorority img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.events-container .box-container .box .sorority h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+
+}
+
+.events-container .box-container .box .sorority p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.events-container .box-container .box .sorority .event-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+/* individual**/
+.events-container .box-container .box .individual{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-container .box-container .box .individual img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.events-container .box-container .box .individual h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+
+}
+
+.events-container .box-container .box .individual p{
+    color: var(--light-color);
+    font-size: 1.6rem;
+}
+
+.events-container .box-container .box .individual .event-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+
 .events-container .box-container .box .location{
     padding: 1rem 0;
     font-size: 1.6rem;
