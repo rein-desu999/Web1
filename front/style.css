@@ -165,8 +165,9 @@ section{
 
 }
 
-.events-container .box-container .box .club span{
+.events-container .box-container .box .club p{
     color: var(--light-color);
+    font-size: 1.6rem;
 }
 
 .btn{
