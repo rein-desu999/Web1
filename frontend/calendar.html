@@ -1,0 +1,45 @@
+<script>
+    // Sample data for events
+    const events = [
+      { date: '2024-02-02', name: 'SEA Meeting', description: 'Monthly meeting for the Software Engineering Association.' },
+      // Add more events as needed
+    ];
+  
+    // Function to render the calendar
+    function renderCalendar() {
+      const calendarElement = document.getElementById('calendar');
+      const currentDate = new Date();
+  
+      for (let i = 0; i < 7; i++) {
+        const day = new Date(currentDate);
+        day.setDate(currentDate.getDate() + i);
+  
+        const dayBox = document.createElement('div');
+        dayBox.classList.add('col', 'event-box');
+        dayBox.setAttribute('data-date', day.toISOString().split('T')[0]);
+  
+        // Check if there's an event for the current day
+        const event = events.find(e => e.date === day.toISOString().split('T')[0]);
+        if (event) {
+          dayBox.innerHTML = `<p>${day.getDate()}</p><strong>${event.name}</strong>`;
+          dayBox.addEventListener('click', () => showEventDetails(event));
+        } else {
+          dayBox.innerHTML = `<p>${day.getDate()}</p>`;
+        }
+  
+        calendarElement.appendChild(dayBox);
+      }
+    }
+  
+    // Function to show event details modal
+    function showEventDetails(event) {
+      document.getElementById('eventName').innerText = event.name;
+      document.getElementById('eventDescription').innerText = event.description;
+  
+      $('#eventModal').modal('show');
+    }
+  
+    // Call the function to render the calendar
+    renderCalendar();
+  </script>
+  
