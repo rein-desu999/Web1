@@ -55,7 +55,7 @@ body{
 section{
     padding: 2rem;
     margin: 0 auto;
-    max-width: 120px;
+    max-width: 1200px;
 }
 
 .btn{
@@ -171,6 +171,8 @@ section{
     font-size: 1.8rem;
     color: var(--black);
 }
+
+
 
 
 
