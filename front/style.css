@@ -122,9 +122,10 @@ section{
 }
 
 .category .box-container .box:hover i{
-    color: var(--white);
     background-color: var(--white);
 }
+
+
 .btn{
     display: inline-block;
     margin-top: 1rem;
@@ -334,13 +335,22 @@ section{
         transition: .2s linear;
     }
 
+    .header .flex .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
     .header .flex .navbar a{
         display: block;
         padding: 1.5rem 2rem;
     }
 
-    .header .flex .navbar .active{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    .category .box-container{
+        grid-template-columns: repeat(auto-fit, 16.5rem);
+    }
+
+    .category .box-container .box{
+        flex-flow: column;
+        text-align: center;
     }
 }
 
