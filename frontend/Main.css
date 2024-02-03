@@ -124,6 +124,11 @@ header .fa-bars{
     color: #333;
 }
 
+.home .content h5{
+    font-size: 4rem;
+    color: aqua;
+}
+
 .home .content span{
     font-size: 3rem;
     color: var(--blue);
@@ -225,13 +230,13 @@ header .fa-bars{
 
 /*start event*/
 
-.event .box-container{
+.events .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
 }
 
-.event .box-container .box{
+.events .box-container .box{
     flex: 1 1 30;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
     border-radius: .5rem;
@@ -239,48 +244,48 @@ header .fa-bars{
     position: relative;
 }
 
-.event .box-container .box h2{
+.events .box-container .box h2{
     font-size: 5rem;
     color: #333;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
 
-.event .box-container .box p{
+.events .box-container .box p{
     font-size: 2rem;
     color: #333;
     padding-bottom: 1rem;
 }
 
-.event .box-container .box h5{
+.events .box-container .box h5{
     font-size: 2.5rem;
     color: var(--blue);
     padding-bottom: 2rem;
 }
 
-.event .box-container .box ul{
+.events .box-container .box ul{
     font-size: 2rem;
     color: var(--blue);
     padding-bottom: 1rem;
     font-weight: bold;
 }
 
-.event .box-container .box li{
+.events .box-container .box li{
     font-size: 2rem;
     color: #555;
     padding-bottom: 1rem;
 }
 
-/*event end*/
+/*events end*/
 
-.event .row{
+.events .row{
     display: flex;
     flex-wrap: wrap-reverse;
     gap: 1.5rem;
     align-items: center;
 }
 
-.event .row form{
+.events .row form{
     flex: 1 1 1 40rem;
     padding: 2rem 2.5rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -289,15 +294,15 @@ header .fa-bars{
     border-radius: .5rem;
 }
 
-.event .row image{
+.events .row image{
     flex: 1 1 40rem;
 }
 
-.event .row image img{
+.events .row image img{
     width: 100%;
 }
 
-.event .row form .box{
+.events .row form .box{
     padding: 1rem;
     font-size: 1.7rem;
     color: #333;
@@ -308,11 +313,11 @@ header .fa-bars{
     width: 100%;
 }
 
-.event .row form .box:focus{
+.events .row form .box:focus{
     border-color: var(--blue);
 }
 
-.event .row form textarea{
+.events .row form textarea{
     height: 15rem;
     resize: none;
 }
