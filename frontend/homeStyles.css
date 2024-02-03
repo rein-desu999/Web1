@@ -1,38 +1,169 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+
+.title {
+    /* border: 5px outset rgb(52, 181, 1);
+    background-color: rgba(180, 236, 255, 0); */
+    /* padding-top: 1%;
+    padding-left: 25%;
+    padding-right: 25%; */
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+header h1 {
+    /* text-align: center;  */
+    margin: 0;
+}
+
+/* ul {
+    list-style-type: none;
     margin: 0;
     padding: 0;
-}
+    justify-content: center;
+    text-align: center;
+} */
 
 header {
     background-color: hsl(122, 90%, 23%);
     color: #fff;
     text-align: center;
-    padding: 1em 0;
+    padding-top: 1%;
+    padding-bottom: 1px;
 }
 
 header h1 {
     margin: 0;
 }
 
- nav ul {
+/* nav {
+    padding-bottom: 10px;
+    margin-top: 5px;
+} */
+
+nav ul {
     list-style: none;
+<<<<<<< Updated upstream
     padding: 0;
+=======
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    /* padding-bottom: 10px; */
+>>>>>>> Stashed changes
 }
 
-nav li {
-    display: inline;
-    margin-right: 20px;
+/* Styling for the buttons */
+nav ul li {
+    margin: 0 10px;
 }
 
 nav a {
     text-decoration: none;
     color: #f5ed0c;
     font-weight: bold;
+    /* justify-content: center; */
+}
+
+.prompt {
+    text-align: center;
+    padding-bottom: 1px;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    border: 5px outset rgb(52, 181, 1);
+    background-color: rgba(180, 236, 255, 0);
+    padding-bottom: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 
 main {
-    padding: 10px;
+    padding: 20px;
+    margin: 0;
+}
+
+table, th, td
+{
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+    width: auto;
+}
+
+.clubContent {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.schoolContent {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.IndividualContent {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+
+.home-container{
+    /* background: url(../image/home.png), rgba(0,0,0,.7) no-repeat; */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: color;
+}
+
+.home-container .home{
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.home-container .home form{
+    background-color: var(--white);
+    width: 50rem;
+    border-radius: .5rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.home-container .home form h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.home-container .home form p{
+    text-align: left;
+    font-size: 1.6rem;
+    color: var(--light-color);
+    padding-top: 1rem;
+}
+
+.home-container .home form p span{
+    color: var(--blue);
+}
+
+.home-container .home form .input{
+    width: 100%;
+    border-radius: .5rem;
+    margin: 1rem 0;
+    background-color: var(--light-bg);
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
 }
 
 
