@@ -30,7 +30,7 @@
         </div>
 
         <ul id="data-list"></ul>
-        \
+        
 
         <script type="module">
             // Import the functions you need from the SDKs you need
@@ -71,7 +71,7 @@
                     snapshot.forEach(function (childSnapshot) {
                       var eventData = childSnapshot.val();
                       var listItem = document.createElement('li');
-                      listItem.textContent = `Name: ${eventData.Name}, Date: ${eventData.Date}, Time: ${eventData.Time}, Location: ${eventData.Location}`;
+                      listItem.textContent = `Name: ${eventData.Name}, Date: ${eventData.Date}, Time: ${eventData.Time}, Location: ${eventData.Location}, Organizer: ${eventData.organizer}`;
                       document.getElementById('data-list').appendChild(listItem);
                     });
                   }
