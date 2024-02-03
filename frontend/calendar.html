@@ -26,7 +26,7 @@
             <div class="w3-container w3-gray">
                 <h2>Event Board</h2>
             </div>
-                <button id="displayButton" class="w3-btn">Insert</button>
+                <button id="sortButton" class="w3-btn">Sort By Date</button>
         </div>
 
         <ul id="data-list"></ul>
@@ -94,9 +94,23 @@
 
                           headers.forEach(header => {
                               var cell = document.createElement('td');
+
+                              if(header === 'Name') {
+                                cell.dataset.description = eventData.Description;
+                                cell.classList.add('event-name');
+                              }
                               cell.textContent = eventData[header];
                               row.appendChild(cell);
                           });
+
+                        row.addEventListener('mouseover', function (event) {
+                          if(event.target.classList.contains('event-name')){
+                          showPopup(event.target);
+                        }
+                        });
+                        row.addEventListener('mouseover', function (event) {
+                          hidePopup();
+                        });
 
                           tbody.appendChild(row);
                       });
@@ -109,8 +123,8 @@
                   });
                 }
 
-
-            displayAllEvents();
+        displayAllEvents();
+        document.getElementById('sortButton').addEventListener('click', sortEventsByDate);
         </script>
     </main>
 
