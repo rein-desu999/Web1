@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poly Event Board</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Poly Event Board</h1>
+        <nav>
+            <ul>
+                <li><a href="Main front page.html">Home</a></li>
+                <li><a href="calendar.html">Events</a></li>
+                <li><a href="make an event.html">Make an event</a></li>
+                <li><a href="log in.html">Sign-In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="w3-card-4">
+            <div class="w3-container w3-gray">
+                <h2>Make an event</h2>
+            </div>
+            <form id="createEventForm" class="w3-container">
+                <label for="eventName">Event Name</label>
+                <input id="eventName" class="w3-input" type="text" required>
+
+                <label for="eventDate">Event Date</label>
+                <input id="eventDate" class="w3-input" type="date" required>
+
+                <label for="eventTime">Event Time</label>
+                <input id="eventTime" class="w3-input" type="time" required>
+
+                <label for="location">Location</label>
+                <input id="location" class="w3-input" type="text" required>
+                
+                <label for="type">Type of Event</label>
+                <input id="type" class="w3-input" type="text" required>
+                
+                <label for="description">Description</label>
+                <textarea id="description" class="w3-input" rows="4" required></textarea>
+
+                <label for="organizerName">Organizer Name</label>
+                <input id="organizerName" class="w3-input" type="text" required>
+
+                <label for="organizerEmail">Organizer Email</label>
+                <input id="organizerEmail" class="w3-input" type="email" required>
+
+                <button id="createButton" class="w3-btn">Create</button>
+            </form>
+        </div>
+
+        <script type="module">
+            import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js';
+            import { getDatabase, ref, push, set } from 'https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js';
+
+            document.addEventListener('DOMContentLoaded', function () {
+                document.getElementById('createEventForm').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    storeInputs();
+                });
+            });
+
+            function storeInputs() {
+                var eventName = document.getElementById('eventName').value;
+                var eventDate = document.getElementById('eventDate').value;
+                var eventTime = document.getElementById('eventTime').value;
+                var location = document.getElementById('location').value;
+                var type = document.getElementById('type').value;
+                var description = document.getElementById('description').value;
+                var organizerName = document.getElementById('organizerName').value;
+                var organizerEmail = document.getElementById('organizerEmail').value;
+
+                // Call the saveInputs function with the form values
+                saveInputs(eventName, eventDate, eventTime, location, type, description, organizerName, organizerEmail);
+
+                // Reset the form
+                document.getElementById('createEventForm').reset();
+            }
+
+            const firebaseConfig = {
+            apiKey: "AIzaSyAwHcImyqA2GlnuknwLjfpBLYiE021rhsA",
+            authDomain: "hackathon-dbafe.firebaseapp.com",
+            projectId: "hackathon-dbafe",
+            storageBucket: "hackathon-dbafe.appspot.com",
+            messagingSenderId: "961199967300",
+            appId: "1:961199967300:web:cbca9d3caf02648d9b8011",
+            measurementId: "G-E9LG61220G"
+            };
+
+            const firebaseApp = initializeApp(firebaseConfig);
+            const database = getDatabase(firebaseApp);
+
+            let messagesRef = ref(database, 'Collected Data');
+
+            function saveInputs(eventName, eventDate, eventTime, location, type, description, organizerName, organizerEmail) {
+                let newMessageRef = push(messagesRef);
+                set(newMessageRef, {
+                    eventName: eventName,
+                    eventDate: eventDate,
+                    eventTime: eventTime,
+                    location: location,
+                    type: type,
+                    description: description,
+                    organizerName: organizerName,
+                    organizerEmail: organizerEmail,
+                }); 
+            }
+        </script>
+    </main>
+</body>
+
+</html>
