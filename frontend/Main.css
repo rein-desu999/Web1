@@ -188,3 +188,102 @@ header .fa-bars{
     line-height: 1.5;
 }
 
+.icons-container{
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem ;
+}
+
+.icons-container .icons{
+    background: #fff;
+    border: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+
+.icons-container .icons img{
+    height: 9rem;
+    margin-right: 2rem;
+}
+
+.icons-container .icons h3{
+    color: #333;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.icons-container .icons span{
+    color: #555;
+    font-size: 1.3rem;
+}
+
+.event .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .box-container .box{
+    flex: 1 1 25rem;
+}
+
+.footer .box-container .box h3{
+    color: #333;
+    font-size: 2.5rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a{
+    display: block;
+    color: #666;
+    font-size: 1rem;
+    padding: 1rem0;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img{
+    margin-top: 1rem;
+}
+
+/*media display**/
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
+    }
+
+    .home{
+        background-position: left;
+    }
+}
+
+@media (max-width:768px){
+    header .fa-bars{
+        display: block;
+    }
+}
+
+
+
