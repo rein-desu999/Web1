@@ -65,6 +65,7 @@ section{
     color: var(--black);
     text-transform: capitalize;
     padding: 1rem 0;
+    text-shadow: 2px 2 ox 2px rgba(0,0,0,.2);
 }
 
 .category .box-container{
@@ -430,7 +431,7 @@ section{
 }
 
 .header .flex .logo i{
-    margin-right: .5rem;
+    margin-right: 2.5rem;
     color: var(--light-color);
 }
 
@@ -574,6 +575,10 @@ section{
     background-color: var(--white);
     border: var(--border);
     box-shadow: var(--box-shadow);
+    z-index: 10;
+    transition: .2s linear;
+    transform: scaleY(0);
+    transform-origin: top;
 }
 
 .job-filter form .dropdown-container .dropdown .lists .items{
