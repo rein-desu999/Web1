@@ -17,7 +17,8 @@ header h1 {
 
  nav ul {
     list-style: none;
-    padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav li {
