@@ -595,12 +595,41 @@ section{
 
 
 
+/* event calendar */
 
+.calendar-container {
+    padding: 2rem;
+}
 
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1rem;
+}
 
+.event {
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
 
+.event-date {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
 
+.event-title {
+    font-size: 1.8rem;
+    color: var(--black);
+}
 
+.event-time,
+.event-location {
+    font-size: 1.4rem;
+    color: var(--light-color);
+}
 
 
 
