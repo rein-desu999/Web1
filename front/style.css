@@ -125,6 +125,49 @@ section{
     background-color: var(--white);
 }
 
+.events-container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.events-container .box-container .box{
+    background-color: var(--white);
+    border-radius: .5rem;
+    border: var(--border);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+    overflow-x: hidden;
+}
+
+.events-container .box-container .box .club{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.events-container .box-container .box .club img{
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+}
+
+.events-container .box-container .box .club h3{
+    font-size: 1.8rem;
+    color: var(--black);
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    padding-bottom: .5rem;
+
+}
+
+.events-container .box-container .box .club span{
+    color: var(--light-color);
+}
 
 .btn{
     display: inline-block;
