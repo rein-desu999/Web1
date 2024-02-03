@@ -170,6 +170,25 @@ section{
     font-size: 1.6rem;
 }
 
+.events-container .box-container .box .club .event-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-transform: capitalize;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.events-container .box-container .box .location{
+    padding: 1rem 0;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.events-container .box-container .box .tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 .btn{
     display: inline-block;
     margin-top: 1rem;
