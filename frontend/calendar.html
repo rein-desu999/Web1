@@ -93,23 +93,9 @@
 
                           headers.forEach(header => {
                               var cell = document.createElement('td');
-
-                              if(header === 'Name') {
-                                cell.dataset.description = eventData.Description;
-                                cell.classList.add('event-name');
-                              }
                               cell.textContent = eventData[header];
                               row.appendChild(cell);
                           });
-
-                        row.addEventListener('mouseover', function (event) {
-                          if(event.target.classList.contains('event-name')){
-                          showPopup(event.target);
-                        }
-                        });
-                        row.addEventListener('mouseover', function (event) {
-                          hidePopup();
-                        });
 
                           tbody.appendChild(row);
                       });
@@ -122,8 +108,8 @@
                   });
                 }
 
-        displayAllEvents();
-        document.getElementById('sortButton').addEventListener('click', sortEventsByDate);
+
+            displayAllEvents();
         </script>
     </main>
 
