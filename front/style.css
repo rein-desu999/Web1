@@ -1,6 +1,6 @@
 /* fonts**/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/brands.min.js');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inconsolata:wght@300;400;500;600;700&display=swap');
 
 :root{
     --main-color:#00843d;
@@ -15,7 +15,7 @@
 
 
 *{
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Comfortaa', sans-serif;
     margin: 0; padding: 0;
     box-sizing: border-box;
     text-decoration: none;
@@ -36,7 +36,7 @@
     background-color: transparent;
 }
 
-::-webkit-scrollbar-trumb{
+::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
 
@@ -57,7 +57,7 @@ section{
     max-width: 120px;
 }
 
-header{
+.header{
     position: sticky;
     top: 0; left: 0; right: 0;
     background-color: var(--white);
@@ -65,4 +65,10 @@ header{
     z-index: 1000;
 }
 
+.header .flex{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
