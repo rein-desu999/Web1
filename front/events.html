@@ -17,7 +17,7 @@
     <!-- Header section-->
     <header class="flex">
 
-        <div id="menu-btn" class="fas fa-bars-staggered"`></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
 
         <a href="home.html" class="logo"><i class="fas fa-star"></i>EventSchedule.</a>
 
@@ -35,8 +35,58 @@
     </header>
 
     <!-- Events filter-->
-    <section class="events-filter"></section>
+    <section class="event-filter">
 
+        <h1 class="heading">filter events</h1>
+        <form action="" method="post">
+            <div class="flex">
+                <div class="box">
+                    <p>Category <span>*</span></p>
+                    <input type="text" name="name" placeholder="school, clubs, sorority, individual" required maxlength="20" class="input">
+                </div>
+                <div class="box">
+                    <p>Date <span></span></p>
+                    <input type="date" name="date" placeholder="mm/dd/yy" required maxlength="" class="input">
+                </div>
+            </div>
+            <div class="dropdown-container">
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="date happen" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="itmes">today</p>
+                        <p class="itmes">3 days</p>
+                        <p class="itmes">7 days</p>
+                        <p class="itmes">10 days</p>
+                        <p class="itmes">15 days</p>
+                        <p class="itmes">30 days</p>
+                    </div>
+                </div>
+                
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="category" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="itmes">school</p>
+                        <p class="itmes">sorority</p>
+                        <p class="itmes">individual</p>
+                        <p class="itmes">club</p>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <input type="text" readonly placeholder="college" name="date" maxlength="20" class="output">
+                    <div class="lists">
+                        <p class="itmes">business</p>
+                        <p class="itmes">science</p>
+                        <p class="itmes">engineer</p>
+                        <p class="itmes">agriculture</p>
+                        <p class="itmes">education</p>
+                        <p class="itmes">letters, arts, and social sciences</p>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </section>
 
 
 
@@ -234,7 +284,7 @@
                 <button type="submit" class="fas fa-heart"></button>
             </div>
         </div>
-        
+
     </section>
 
 

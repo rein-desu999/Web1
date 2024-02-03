@@ -500,17 +500,93 @@ section{
     color: var(--black);
 }
 
+.job-filter form{
+    background-color: var(--white);
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    padding: 2rem;
+}
 
+.job-filter form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1rem;
+}
 
+.job-filter form .flex .box{
+    flex: 1 1 40rem;
+}
 
+.job-filter form .flex .box p{
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
 
+.job-filter form .flex .box p span{
+    color: var(--blue);
+}
 
+.job-filter form .flex .box .input{
+    width: 100%;
+    border-radius: .5rem;
+    padding: 1.4rem;
+    color: var(--black);
+    margin: 1rem 0;
+    background-color:var(--light-bg);
+    font-size: 1.8rem;
+}
 
+.job-filter form .dropdown-container{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
 
+.job-filter form .dropdown-container .dropdown{
+    flex: 1 1 20rem;
+    position: relative;
+}
 
+.job-filter form .dropdown-container .dropdown .output{
+    width: 100%;
+    background: var(--light-bg);
+    border-radius: .5rem;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    text-transform: center;
+    user-select: none;
+    cursor: pointer;
+}
 
+.job-filter form .dropdown-container .dropdown .output:placeholder-shown{
+    text-transform: capitalize;
+}
 
+.job-filter form .dropdown-container .dropdown .lists{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    background-color: var(--white);
+    padding: 1rem;
+    border-radius: .5rem;
+    background-color: var(--white);
+    border: var(--border);
+    box-shadow: var(--box-shadow);
+}
 
+.job-filter form .dropdown-container .dropdown .lists .items{
+    padding: 1.2rem 1.4rem;
+    border-radius: .5rem;
+    font-size: 1.6rem;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.job-filter form .dropdown-container .dropdown .lists .items:hover{
+    background-color: var(--light-bg);
+}
 
 
 
