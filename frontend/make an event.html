@@ -52,11 +52,18 @@
                 <label for="organizerEmail">Organizer Email</label>
                 <input id="organizerEmail" class="w3-input" type="email" required>
                 
-                <button id="createButton" class="w3-btn">Create</button>
+                <button id="createButton" class="w3-btn" onclick="storeInputs()">Create</button>
             </form>
         </div>   
         
         <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('createEventForm').addEventListener('submit', function(event) {
+                    event.preventDefault(); 
+                    storeInputs(); 
+                });
+            });
+        
             function storeInputs() {
                 var eventName = document.getElementById('eventName').value;
                 var eventDate = document.getElementById('eventDate').value;
@@ -67,8 +74,12 @@
                 var organizerName = document.getElementById('organizerName').value;
                 var organizerEmail = document.getElementById('organizerEmail').value;
                 var inputArray = [eventName, eventDate, eventTime, location, type, description, organizerName, organizerEmail];
+        
+                console.log(inputArray);
             }
         </script>
+
+        
 
     </main>
 </body>
