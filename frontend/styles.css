@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding-bottom: 0;
+    padding: 0;
 }
 
 body {
@@ -12,48 +12,33 @@ body {
 
 header {
     background-color: hsl(122, 90%, 23%);
-    color: #ffffff;
+    color: #fff;
     text-align: center;
-    padding-top: 1%;
-    padding-bottom: 17px;
-}
-
-section
-{
-    border: 5px outset rgb(52, 181, 1);
-    background-color: rgba(180, 236, 255, 0);
-    /* these paddings are between the w3 card */
-    padding-bottom: 10%; 
-    padding-left: 10%;
-    padding-right: 10%;
-    
+    padding: 1em 0;
 }
 
 
 header h1 {
-    padding-bottom: 15px;
     margin: 0;
 }
 
-/* nav {
-    padding-bottom: 10px;
-    margin-top: 5px;
-} */
+nav {
+    margin-top: 10px;
+}
 
 nav ul {
     list-style: none;
     display: flex;
     justify-content: center;
-    text-align: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav a {
     text-decoration: none;
-    color: #f5ed0c;
+    color: #fff;
     font-weight: bold;
 }
 
@@ -61,23 +46,22 @@ main {
     padding: 20px;
 }
 
-/* section {
+section {
     max-width: 800px;
     margin: 0 auto;
-} */
+}
 
 .w3-card-4 {
     width: 100%;
     background-color: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-    padding-top: 10px;
 }
 
 .w3-container.w3-gray {
     background-color: hsl(122, 90%, 23%);
     color: white;
-    /* padding: 16px; */
+    padding: 16px;
     text-align: center;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
