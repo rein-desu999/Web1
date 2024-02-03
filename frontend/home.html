@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cal Poly Pomona Events Board</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+
+        section
+        {
+            border: 5px outset rgb(52, 181, 1);
+            background-color: rgba(180, 236, 255, 0);
+            padding-bottom: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            
+        }
+        .title {
+            /* border: 5px outset rgb(52, 181, 1);
+            background-color: rgba(180, 236, 255, 0); */
+            padding-top: 1%;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .prompt {
+            text-align: center;
+            padding-bottom: 1px;
+        }
+
+        table, th, td
+        {
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            text-align: center;
+            width: auto;
+        }
+
+        .clubContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .schoolContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .IndividualContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+    </style>
+    <!-- End of Style -->
+</head>
+<!-- End of head -->
+
+
+
+<body>
+    <header>
+        <h1>CPP Events Board</h1>
+        <nav>
+            <ul>
+                <li><a href="#back to home page">Home</a></li>
+                <li><a href="#scroll down to about">About</a></li>
+                <li><a href="#events page">Events</a></li>
+                <li><a href="#create events page">Create Event</a></li>
+                <li><a href="#login page">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of header -->
+
+    <main>
+        <section>
+            <div class="title">
+                <h2>Welcome to the CPP Events Board.
+                </h2>
+                <h4>Here you can discover and explore events hosted by the School, Clubs, and even Students!
+                </h4>
+            </div>
+            <!-- End of class -->
+
+            <div class="prompt">
+                <p>
+                    Some Events that are happening soon are shown below!
+                </p>
+            </div>
+
+            <div class="eventsBody">
+                <table>
+                    <tr>
+                      <th>Club Events</th>
+                      <th>School Events</th>
+                      <th>Individual Events</th>
+                    </tr>
+                    <tr>
+                      <td> 
+                        <div class="clubContent">
+                            <h2>Bronco Hacks</h2>
+                            <p>Hosted by: CSS, FAST, GAMEDEV, GDSC, MISSA, SHECODES, /SCRIPT</p>
+                            <span>Feb 2, 12pm - Feb 3, 12pm </span>
+                            <br>
+                            <span>- Located at: URSA Major</span>
+                            <p>Web developement and Cybersecurtiy competition</p>
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Cal_Poly_Pomona_Broncos_logo.svg/800px-Cal_Poly_Pomona_Broncos_logo.svg.png" alt="Bronco Hacks Image" width="200px" height="100px">
+                            <br>
+                            <a href="#" class="btn">See more Club-related Events</a>
+                        <!--
+                            <span> id="eventInfo"</span>
+                            <script>
+                                document.addEventListener('DOMContentLoaded',function(){
+                                var currentDate = new Date().toLocaleDateString();
+                                var currentTime = new Time().toLocaleTimeString();
+                                var currentLocation = "School Auditorium";
+                
+                                var eventInfo = "" + currentDate + ", " +currentTime + " - " + currentLocation;
+                                document.getElementById('eventInfo').textContent= eventInfo;
+                                )};
+                            </script>
+                        -->
+                        </div>
+                        <!-- End of Class -->
+                      </td>
+                      <td>
+                        <div class="schoolContent">
+                            <h2>Club Rush</h2>
+                            <p>Hosted by: ASI, BMS, MLH, CPP
+                            </p>
+                            <span>Feb 28, 3pm - Feb 3, 12pm
+                            </span>
+                            <br>
+                            <span>- Located at: University Quad</span>
+                            <p>Opportunity for students engagement with clubs
+                            </p>
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Cal_Poly_Pomona_Broncos_logo.svg/800px-Cal_Poly_Pomona_Broncos_logo.svg.png" alt="Bronco Hacks Image" width="200px" height="100px">
+                            <br>
+                            <a href="#" class="btn">See more CPP-related Events</a>
+                        <!--
+                            <span> id="eventInfo"</span>
+                            <script>
+                                document.addEventListener('DOMContentLoaded',function(){
+                                var currentDate = new Date().toLocaleDateString();
+                                var currentTime = new Time().toLocaleTimeString();
+                                var currentLocation = "School Auditorium";
+                
+                                var eventInfo = "" + currentDate + ", " +currentTime + " - " + currentLocation;
+                                document.getElementById('eventInfo').textContent= eventInfo;
+                                )};
+                            </script>
+                        -->
+                        </div>
+                        <!-- End of class -->
+                      </td>
+                      <td>
+                        <div class="IndividualContent">
+                            <h2>Fraternity Party</h2>
+                            <p>Hosted by: Alpha Psi Fraternity
+                            </p>
+                            <span>Feb 15 - Feb 16, 12pm - URSA Major</span>
+                            <br>
+                            <span>- Party at 12345 West Avenue Street</span>
+                            <p> Meet fraternity members and party with them
+                            </p>
+                            <img src = "https://upload.wikimedia.org/wikipedia/en/thumb/d/d1/Cal_Poly_Pomona_Broncos_logo.svg/800px-Cal_Poly_Pomona_Broncos_logo.svg.png" alt="Bronco Hacks Image" width="200px" height="100px">
+                            <br>
+                            <a href="#" class="btn">See more Student Events</a>
+                        <!--
+                            <span> id="eventInfo"</span>
+                            <script>
+                                document.addEventListener('DOMContentLoaded',function(){
+                                var currentDate = new Date().toLocaleDateString();
+                                var currentTime = new Time().toLocaleTimeString();
+                                var currentLocation = "School Auditorium";
+                
+                                var eventInfo = "" + currentDate + ", " +currentTime + " - " + currentLocation;
+                                document.getElementById('eventInfo').textContent= eventInfo;
+                                )};
+                            </script>
+                        -->
+                        </div>
+                        <!-- End of class -->
+                      </td>
+                    </tr>
+                </table>
+                <!-- End of table -->
+            </div>
+            <!-- End of class -->
+        </section>
+        <!-- End of Section -->
+
+    </main>
+    <!-- End of main -->
+
+    <footer>
+        <p>&copy; 2024 CPPEB. All rights reserved.</p>
+    </footer>
+    <!-- End of footer -->
+</body>
+<!-- End of body -->
+
+</html>
