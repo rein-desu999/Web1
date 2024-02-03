@@ -108,7 +108,7 @@
                 console.log("insert data function called");
                 console.log("insert data function called");
                 console.log("Event ID:", eventID.value);
-                set(ref(db, eventID.value),{
+                set(ref(db,"Event/" + eventID.value),{
                     ID : eventID.value,
                     Name: eventName.value,
                     Date: eventDate.value,
@@ -128,6 +128,8 @@
                     alert(error);
                 });
             }
+
+            
             console.log("before add event listenter");
 
             insertButton.addEventListener('click', function(event) {
