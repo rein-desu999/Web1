@@ -6,10 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cal Poly Pomona Events Board</title>
     <link rel="stylesheet" href="homeStyles.css">
+    <link rel="stylesheet" href="style.css">
 
     <style>
 
+        /* section
+        {
+            border: 5px outset rgb(52, 181, 1);
+            background-color: rgba(180, 236, 255, 0);
+            padding-bottom: 10%;
+            padding-left: 10%;
+            padding-right: 10%;
+            
+        }
+        .title {
+            border: 5px outset rgb(52, 181, 1);
+            background-color: rgba(180, 236, 255, 0);
+            padding-top: 1%;
+            padding-left: 25%;
+            padding-right: 25%;
+            text-align: center;
+        }
 
+        h1 {
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .prompt {
+            text-align: center;
+            padding-bottom: 1px;
+        }
+
+        table, th, td
+        {
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid black;
+            text-align: center;
+            width: auto;
+        }
+
+        .clubContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .schoolContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+
+        .IndividualContent {
+            padding-left: 8px;
+            padding-right: 8px;
+        } */
     </style>
     <!-- End of Style -->
 </head>
@@ -18,27 +75,14 @@
 
 
 <body>
-<<<<<<< Updated upstream
     <header>
-        <h1>CPP Events Board</h1>
-        <nav>
-            <ul>
-                <li><a href="#back to home page">Home</a></li>
-                <li><a href="#scroll down to about">About</a></li>
-                <li><a href="#events page">Events</a></li>
-                <li><a href="#create events page">Create Event</a></li>
-                <li><a href="#login page">Login</a></li>
-=======
-    <header> 
         <h1>Poly Event Board</h1>
         <nav>
             <ul>
-                <li><a href="#home.html">Home</a></li>
-                <li><a href="#home.html">About</a></li>
+                <li><a href="home.html">Home</a></li>
                 <li><a href="calendar.html">Events</a></li>
                 <li><a href="make an event.html">Create Event</a></li>
                 <li><a href="log in.html">Account</a></li>
->>>>>>> Stashed changes
             </ul>
         </nav>
     </header>
@@ -71,7 +115,7 @@
                       <td> 
                         <div class="clubContent">
                             <h2>Bronco Hacks</h2>
-                            <p>Hosted by: CSS, FAST, GAMEDEV, GDSC, MISSA, SHECODES, /SCRIPT</p>
+                            <p>Hosted by: CSS, FAST, GAMEDEV, GDSC, MISSA, ETC</p>
                             <span>Feb 2, 12pm - Feb 3, 12pm </span>
                             <br>
                             <span>- Located at: URSA Major</span>
@@ -153,31 +197,65 @@
                         -->
                         </div>
                         <!-- End of class -->
+                        
                       </td>
                     </tr>
+                    
                 </table>
                 <!-- End of table -->
             </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+              <!-- Category start-->
+    <section class="category">
+
+        <h1 class="heading">events category</h1>
+
+        <div class="box-container">
+
+            <a href="#" class="box">
+             
+                <div>
+                    <h3>school</h3>
+                    <span>20 events</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+               
+                <div>
+                    <h3>clubs</h3>
+                    <span>100 events</span>
+                 </div>
+            </a>
+
+            <a href="#" class="box">
+               
+                <div>
+                    <h3>sorority</h3>
+                    <span>5 events</span>
+                </div>
+            </a>
+
+            <a href="#" class="box">
+              
+                <div>
+                    <h3>individual</h3>
+                    <span>10 events</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
             <!-- End of class -->
         </section>
+        
         <!-- End of Section -->
-
-<!-- Home section-->
-<section class="home-container">
-    <section class="home">
-
-        <form action="" method="post">
-            <h3>Find the newest Events</h3>
-            <p>Category <span>*</span></p>
-            <input type="text" name="name" placeholder="school, clubs, sorority, individual" required maxlength="20" class="input">
-            <p>Date</p>
-            <input type="date" name="date" placeholder="mm/dd/yy" required maxlength="" class="input">
-            <input type="submit" value="search event" name="search" class="btn">
-        </form>
-    </section>
-</section>
-
-
 
     </main>
     <!-- End of main -->
@@ -185,6 +263,7 @@
     <footer>
         <p>&copy; 2024 CPPEB. All rights reserved.</p>
     </footer>
+    
     <!-- End of footer -->
 </body>
 <!-- End of body -->

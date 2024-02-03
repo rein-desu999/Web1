@@ -5,6 +5,7 @@
     /* padding-top: 1%;
     padding-left: 25%;
     padding-right: 25%; */
+    font-family: 'Arial', sans-serif;
     text-align: center;
     padding-bottom: 0px;
 }
@@ -12,6 +13,7 @@
 header h1 {
     /* text-align: center;  */
     margin: 0;
+    font-family: 'Arial', sans-serif;
 }
 
 /* ul {
@@ -28,27 +30,26 @@ header {
     text-align: center;
     padding-top: 1%;
     padding-bottom: 1px;
+    font-family: 'Arial', sans-serif;
 }
 
 header h1 {
     margin: 0;
+    padding-bottom: 4px;
 }
 
-/* nav {
+nav {
+    /* dont delete, we need it */
     padding-bottom: 10px;
     margin-top: 5px;
-} */
+}
 
 nav ul {
     list-style: none;
-<<<<<<< Updated upstream
-    padding: 0;
-=======
     display: flex;
     justify-content: center;
     text-align: center;
     /* padding-bottom: 10px; */
->>>>>>> Stashed changes
 }
 
 /* Styling for the buttons */
