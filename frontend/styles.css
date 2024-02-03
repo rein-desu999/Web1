@@ -139,3 +139,14 @@ footer {
 .event-table th {
     background-color: #f2f2f2;
 }
+
+
+.popup-box {
+    position: absolute;
+    display: none;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    z-index: 1;
+}
