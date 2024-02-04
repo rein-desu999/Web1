@@ -1,3 +1,8 @@
+/*
+    File: firebaseConfig.js
+    Author: Johnathan Dang
+ */
+
 const firebaseConfig = {
     apiKey: "AIzaSyAwHcImyqA2GlnuknwLjfpBLYiE021rhsA",
     authDomain: "hackathon-dbafe.firebaseapp.com",

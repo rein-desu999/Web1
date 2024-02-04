@@ -1,3 +1,8 @@
+/*
+    File: hardData.js
+    Author: Johnathan Dang
+ */
+
 const { initializeApp } = require("firebase/app");
 const { addDoc, collection, getFirestore } = require("firebase/firestore");
 const firebaseConfig = require("./firebaseConfig"); // Import your Firebase config

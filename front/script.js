@@ -1,3 +1,7 @@
+/*
+    File: script.js
+    Author: Hoanh Lam
+*/
 let navbar = document.querySelector('.header .flex .navbar');
 
 document.querySelector('#menu-btn').onclick = () =>{
